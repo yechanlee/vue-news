@@ -1,19 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+   <tool-bar></tool-bar>
+   <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ToolBar from './components/ToolBar.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  fetchDate(){
+    console.log('hihi')
+  },
+  components:{
+    ToolBar,
+  },
 }
+
+
+
 </script>
 
 <style>
